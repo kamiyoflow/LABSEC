@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="837.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.WinController">
+   <children>
+      <TableView fx:id="table" layoutX="9.0" layoutY="68.0" prefHeight="700.0" prefWidth="890.0">
+        <columns>
+          <TableColumn fx:id="reference" minWidth="8.799958229064941" prefWidth="74.3999605178833" text="reference" />
+            <TableColumn fx:id="value_type" minWidth="0.0" prefWidth="76.00003051757812" text="value_type" />
+            <TableColumn fx:id="solution" minWidth="30.0" prefWidth="75.0" text="solution" />
+            <TableColumn fx:id="reg_item" minWidth="30.0" prefWidth="75.0" text="reg_item" />
+            <TableColumn fx:id="reg_option" minWidth="30.0" prefWidth="75.0" text="reg_option" />
+            <TableColumn fx:id="description" minWidth="30.0" prefWidth="106.006591796875" text="description" />
+            <TableColumn fx:id="value_data" minWidth="30.0" prefWidth="43.993438720703125" text="value_data" />
+            <TableColumn fx:id="reg_key" minWidth="30.0" prefWidth="75.0" text="reg_key" />
+            <TableColumn fx:id="type" minWidth="30.0" prefWidth="75.0" text="type" />
+            <TableColumn fx:id="see_also" minWidth="30.0" prefWidth="75.0" text="see_also" />
+            <TableColumn fx:id="info" minWidth="0.0" prefWidth="60.800048828125" text="info" />
+            <TableColumn fx:id="select" minWidth="11.199951171875" prefWidth="89.5999755859375" text="select" />
+            <TableColumn fx:id="failed_policies" minWidth="30.0" prefWidth="75.0" text="failed_policies" />
+        </columns>
+      </TableView>
+      <TextField fx:id="textField" layoutX="116.0" layoutY="30.0" prefHeight="26.0" prefWidth="505.0" />
+      <Label layoutX="43.0" layoutY="33.0" prefHeight="17.0" prefWidth="96.0" text="Search Bar" />
+      <CheckBox fx:id="SelectAll" layoutX="817.0" layoutY="46.0" mnemonicParsing="false" text="SelectAll" />
+      <Button fx:id="saveButton" layoutX="541.0" layoutY="781.0" mnemonicParsing="false" onAction="#saveOptions" prefHeight="42.0" prefWidth="101.0" text="Save" />
+      <Button fx:id="compareButton" layoutX="430.0" layoutY="781.0" mnemonicParsing="false" onAction="#compareOptions" prefHeight="42.0" prefWidth="101.0" text="COMPARE" />
+      <Button fx:id="enforce" layoutX="653.0" layoutY="781.0" mnemonicParsing="false" onAction="#enforceOptions" prefHeight="42.0" prefWidth="101.0" text="ENFORCE" />
+      <Button fx:id="back" layoutX="783.0" layoutY="781.0" mnemonicParsing="false" onAction="#back" prefHeight="42.0" prefWidth="101.0" text="BACK" />
+      <Label fx:id="LabelText" layoutX="49.0" layoutY="773.0" prefHeight="17.0" prefWidth="298.0" />
+      <Label fx:id="Lable22" layoutX="49.0" layoutY="794.0" prefHeight="17.0" prefWidth="223.0" />
+      <Label fx:id="Label23" layoutX="49.0" layoutY="815.0" prefHeight="17.0" prefWidth="192.0" />
+   </children>
+</AnchorPane>
